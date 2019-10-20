@@ -1,0 +1,35 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: "Microsoft Yahei", serif;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+  &:hover{
+    outline: none;
+  }
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+/* 根据dpr显示2x图/3x图 */
+.bg-image(@url){
+  background-image:~"url('@{url}@2x.png')";
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image:~"url('@{url}@3x.png')";
+  }
+}
+
+input,textarea {
+  border: 0;
+  -webkit-appearance: none;
+}
