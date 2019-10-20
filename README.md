@@ -1,5 +1,5 @@
 # vue-shop
-基于Vue + VantUI  做的生鲜商城demo
+基于Vue + VantUI  做的生鲜商城demo  线上体验地址: http://lrboy.live
 
 # 技术栈
 ***
